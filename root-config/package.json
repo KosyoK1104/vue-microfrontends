@@ -47,7 +47,8 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "bootstrap": "^5.3.3",
-    "single-spa": "^5.9.3"
+    "single-spa": "^5.9.3",
+    "single-spa-layout": "^2.2.0"
   },
   "types": "dist/kkostadinov-root-config.d.ts"
 }

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <router-link class="navbar-brand" to="/">Navbar</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,16 +9,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <span class="nav-link active" aria-current="page" @click="navigateTo('/app-one')">Home</span>
+            <router-link class="nav-link active" aria-current="page" to="/app-one">App one</router-link>
           </li>
           <li class="nav-item">
-            <span class="nav-link active" aria-current="page">Home</span>
+            <router-link class="nav-link" aria-current="page" to="/app-two">App two</router-link>
           </li>
           <li class="nav-item">
-            <span class="nav-link active" aria-current="page">Home</span>
+            <span class="nav-link" aria-current="page">App three</span>
           </li>
           <li class="nav-item">
-            <span class="nav-link active" aria-current="page">Home</span>
+            <span class="nav-link" aria-current="page">App four</span>
           </li>
         </ul>
       </div>
@@ -27,7 +27,6 @@
 </template>
 
 <script setup>
-import {navigateTo} from "@kkostadinov/root-config";
 
 </script>
 

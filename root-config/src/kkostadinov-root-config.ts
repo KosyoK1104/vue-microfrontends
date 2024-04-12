@@ -16,7 +16,7 @@ registerApplication({
 registerApplication({
     name: "@kkostadinov/app-one",
     app: () => System.import("@kkostadinov/app-one") as any,
-    activeWhen: '/app-one',
+    activeWhen: (location) => startsWithOneOf(location.pathname, ["/app-one"]),
 });
 
 start({
