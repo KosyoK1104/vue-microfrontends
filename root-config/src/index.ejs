@@ -51,8 +51,10 @@
             {
               "imports": {
                 "@kkostadinov/root-config": "//localhost:9000/kkostadinov-root-config.js",
+                "@kkostadinov/navbar": "//localhost:9001/js/app.js",
                 "@kkostadinov/app-one": "//localhost:9002/js/app.js",
-                "@kkostadinov/navbar": "//localhost:9001/js/app.js"
+                "@kkostadinov/app-two": "//localhost:9003/js/app.js",
+                "@kkostadinov/notifications": "//localhost:9004/js/app.js"
               }
             }
         </script>
@@ -81,13 +83,16 @@
     <div id="navbar"></div>
     <div id="app-content"></div>
 </div>
+<div id="notifications-wrapper" style="position: absolute;
+top: 0;
+right: 0;"></div>
 <script>
-    window.onload = function(){
-		Object.getPrototypeOf(System).firstGlobalProp = true;
+    window.onload = function () {
+        Object.getPrototypeOf(System).firstGlobalProp = true;
 
-		System.set(System.resolve("vue"), window.Vue);
-		System.set(System.resolve("vue-router"), window.VueRouter);
-		System.import('@kkostadinov/root-config');
+        System.set(System.resolve("vue"), window.Vue);
+        System.set(System.resolve("vue-router"), window.VueRouter);
+        System.import('@kkostadinov/root-config');
     }
 </script>
 <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>

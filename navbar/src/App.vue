@@ -14,12 +14,6 @@
           <li class="nav-item">
             <router-link class="nav-link" aria-current="page" to="/app-two">App two</router-link>
           </li>
-          <li class="nav-item">
-            <span class="nav-link" aria-current="page">App three</span>
-          </li>
-          <li class="nav-item">
-            <span class="nav-link" aria-current="page">App four</span>
-          </li>
         </ul>
       </div>
     </div>

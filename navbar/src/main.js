@@ -8,7 +8,6 @@ const vueLifecycles = singleSpaVue({
     appOptions: {
         el: '#navbar',
         render() {
-            console.log('render navbar');
             return h(App);
         },
     },

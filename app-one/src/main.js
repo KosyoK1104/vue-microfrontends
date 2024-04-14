@@ -9,7 +9,6 @@ const vueLifecycles = singleSpaVue({
   appOptions: {
     el: '#app-content',
     render() {
-      console.log('render app-one')
       return h(App);
     },
   },
