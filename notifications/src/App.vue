@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute top-0 right-0 p-4">
+  <div class="absolute top-0 right-0 p-4 notifications" v-if="notifications.length !== 0">
     <TransitionGroup name="fade" tag="div">
       <NotificationItem v-for="(notification, index) in notifications" :key="index" :message="notification.message" :type="notification.type"/>
     </TransitionGroup>
@@ -20,7 +20,6 @@ export default {
   },
   mounted() {
     eventDispatcher.listen('notification', (notification) => {
-      console.log(notification)
       this.notifications.push(notification)
       const interval = setInterval(() => {
         this.notifications.shift()
@@ -33,4 +32,17 @@ export default {
 </script>
 
 <style>
+.notifications{
+  border: 1px solid navy;
+  position: relative;
+}
+
+.notifications:before{
+  content: 'Notifications';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: navy;
+  font-size: 11px;
+}
 </style>

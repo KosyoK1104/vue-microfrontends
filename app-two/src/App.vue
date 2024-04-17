@@ -1,6 +1,8 @@
 <template>
-  <p class="text-2xl">Hello from app two</p>
-<button class="btn btn-primary" @click="onClick">Click me to show notification</button>
+  <div class="app-two">
+    <p class="text-2xl">Hello from app two</p>
+    <button class="btn btn-primary" @click="onClick">Click me to show notification</button>
+  </div>
 </template>
 
 <script>
@@ -16,11 +18,20 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.app-two{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid crimson;
+  position:relative;
+}
+
+.app-two:before{
+  content: 'App Two';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: crimson;
+  font-size: 11px;
 }
 </style>

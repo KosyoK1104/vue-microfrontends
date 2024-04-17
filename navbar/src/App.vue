@@ -25,4 +25,17 @@
 </script>
 
 <style>
+.navbar{
+  border: 1px solid orangered;
+  position:relative;
+}
+
+.navbar:before{
+  content: 'Navbar';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: orangered;
+  font-size: 11px;
+}
 </style>
