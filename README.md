@@ -18,3 +18,7 @@ To access the applications, open your browser and go to http://localhost:9000. T
 ## Communication between applications
 The applications communicate with each other using the `eventDispatcher` object exposed by the root-config application. The `eventDispatcher` object is rxjs based and can be used to send and receive events between the applications.
 
+## Concerns
+- The applications should not have hmr and liveReloaded enabled at the same time. This can cause issues with the applications not being able to not load properly.
+- The applications should not have the same port. This can cause issues with the applications not being able to load properly.
+- The applications should not have the same name. This can cause issues with the applications not being able to load properly.
