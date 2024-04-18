@@ -1,5 +1,6 @@
 # Vue microfrontends
 This is a simple example of how to create a microfrontend architecture using Vue.js.
+The project is created as University project. A presentation is uploaded in the repository in Bulgarian language.
 
 ## Applications
 - **root-config**: The main application that will load the other applications. It uses the `single-spa` library to load the other applications. It exposes a `eventDispatcher` object that can be used to communicate between the applications.
