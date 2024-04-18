@@ -1,5 +1,5 @@
-# Vue microfrontends
-This is a simple example of how to create a microfrontend architecture using Vue.js.
+# Vue micro-frontends
+This is a simple example of how to create a micro-frontend architecture using Vue.js.
 The project is created as University project. A presentation is uploaded in the repository in Bulgarian language.
 
 ## Applications
